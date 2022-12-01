@@ -1,0 +1,203 @@
+.navBar{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    
+}
+.dropDown_nav{
+    width:25px;
+    cursor: pointer;
+    background-color: white;
+
+}
+.appName{
+    font-family: a;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+.appSubName{
+    font-size: xx-small;
+    text-align: center;
+    color: white;
+    font-family: c;
+  }
+.homeMain_BG{
+    background-image: url(../../components/imgs/img1.jpg);
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.motto{
+    font-size: x-small;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin: 15px 0;
+}
+.inputSearch_header{
+    width: 85%;
+    display: block;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 10px; 
+    height: 30px;
+    color: #4B1F6E;
+    font-size: 11px;
+
+}
+.searchIcon{
+    width: 30px;
+    color: #7B1F9f;
+    cursor: pointer;
+}
+.searchIcon:hover{
+    color: black;
+}
+.categoryMain{
+    text-align: center;
+    color: #7B1F9f;
+    font-family: b;
+    border: 1px solid #0009;
+    border-radius: 10px;
+    background-color: #fffc;
+    padding: 10px 0px;
+    width: fit-content;
+}
+.outerCategoryList{
+  padding: 9px;
+}
+.categoryMain:hover{
+    transition: transform 0.2s linear;
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 1px 1px 3px #7B1F9f;
+}
+.innerCategoryList{
+margin: 15px 0;
+border: 1px solid #0006;
+border-radius: 20px;
+text-align: center;
+}
+.innerListDetails{
+font-family: a;
+padding: 10px;
+}
+.innerListDetails p{
+font-size:15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footerHeading{
+    text-align: center;
+    color: #7B1F9f; 
+    font-weight: 700;
+
+}
+.footerContainer{
+    background-color: white;
+    padding: 15px 0px 0px 0px;
+
+}
+.footerContainer h3{
+margin: 5px 0;
+}
+.footerBase{
+    background-color: #4B1F6E;
+    text-align: center;
+    font-size: small;
+    color: white;
+    padding: 10px 0;
+    margin: 15px 0 0 0;
+}
+.dropdownArrow{
+    width: 20px;
+    cursor: pointer;
+}
+
+.dropdownContainer{
+    background-color: white;
+    font-size: 11px;
+    font-family: d;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    visibility: hidden;
+    top: 0;
+    max-height: 250px;
+    z-index: 3;
+    
+
+}
+.dropdownContainer li{
+    border:1px solid #0003;
+    padding: 5px 2px;
+    cursor: pointer;
+    
+
+}
+.dropdownContainer li p:hover{
+    color: #7B1F9f;
+}
+.dropdownInnerOption{
+    font-size:12px;
+    font-family:e;
+    visibility: hidden;
+    height: 0;
+}
+.dropdownInnerOption li:hover{
+    color: #7B1F9f;
+
+}
+.flexedBar{
+    display: flex;
+    background-color: white;
+    font-size: 12px;
+    justify-content: space-between;
+    padding:9px 15px;
+    font-weight: 700;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.flexedBar li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.flexedBar li:hover{
+    color: #7B1F9f;
+}
+.navIcon{
+    width: 15px;
+}
+
+
+@media screen and (min-width:350px) {
+    .categoryMain{
+        width: 180px;
+        
+    }
+    .innerCategoryList>div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+   
+}
+
+
+@media screen and (min-width:640px) {
+   .flexedBar{
+    visibility:visible;
+   }
+   .dropDown_nav{
+    visibility: hidden;
+   }
+   
+}
