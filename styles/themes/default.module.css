@@ -67,6 +67,7 @@
     background-color: #fffc;
     padding: 10px 0px;
     width: fit-content;
+    min-width: 100px;
 }
 .outerCategoryList{
   padding: 9px;
@@ -165,19 +166,34 @@ margin: 5px 0;
     width: 100%;
     z-index: 99;
 }
-.flexedBar li{
+.flexedBar div> li,.flexedBar >li{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.flexedBar li:hover{
+.flexedBar div> li:hover,.flexedBar >li:hover{
     color: #7B1F9f;
 }
 .navIcon{
     width: 15px;
 }
+.dropdownInnerOptionMD{
+    position: fixed;
+    top: 0px;
+    visibility: hidden;
+    background-color: white;
+    padding: 10px 15px;
+    overflow: scroll;
+    font-size: 12px;
+}
+.dropdownInnerOptionMD > li{
+    cursor: pointer;
+    padding: 2px 4px;
 
-
+}
+.dropdownInnerOptionMD > li:hover{
+    color: #7B1F9f;
+}
 @media screen and (min-width:350px) {
     .categoryMain{
         width: 180px;

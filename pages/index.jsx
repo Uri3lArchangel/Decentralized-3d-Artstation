@@ -21,7 +21,7 @@ export default function Home() {
       <h1 className={themeClassName.appName}>DDA</h1>
       <p className={themeClassName.appSubName}>Decentralized Digital Artstation</p>
       <p className={themeClassName.motto}>Buy and Sell 3d digital assets on the blockchain</p>
-      <div className='rounded-full bg-white mx-auto flex justify-between my-5 w-11/12'>
+      <div className='rounded-full bg-white mx-auto flex justify-between my-5 w-11/12 sm:w-9/12 lg:w-8/12' >
       <input placeholder='Search by Product name, Category, Tags' type="search" name="" id="" className={themeClassName.inputSearch_header} />
       <MagnifyingGlassCircleIcon className={themeClassName.searchIcon} />
       </div>

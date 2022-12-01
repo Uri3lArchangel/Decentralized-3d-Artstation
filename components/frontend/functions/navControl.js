@@ -1,5 +1,6 @@
 let isOpen=false
 let isOpen2=false
+let isOpen3 = false
 
 export const openNav =()=>{
     let dropDownMenu = document.getElementById('dropdownmenu')
@@ -34,4 +35,27 @@ export const openNav =()=>{
       subMenu.style.height='550px'
       isOpen2=true
     }
+  }
+
+  export function openSubMenuMD(){
+    let subMenu = document.getElementById('innersubmenuMD')
+    let barHeight = document.getElementById('flexedBar').getBoundingClientRect().height
+
+      subMenu.style.visibility='visible'
+      subMenu.style.height='400px'
+      subMenu.style.top=`${barHeight}px`
+    
+
+  }
+
+
+  export function closeSubMenuMD(){
+    let subMenu = document.getElementById('innersubmenuMD')
+    let barHeight = document.getElementById('flexedBar').getBoundingClientRect().height
+
+      subMenu.style.visibility='hidden'
+      subMenu.style.height='0'
+      subMenu.style.top=`${barHeight}px`
+    
+
   }
